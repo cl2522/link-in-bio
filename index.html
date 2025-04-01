@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <style>
       * {border: 1px red dashed;}
+      html {
+        min-height: 100%;
+      }
       body{
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: conic-gradient(from 90deg at 50% 50%, #ff97d5, #ffb1df, #ffc9e9, #ffe1f2, #ffdded, #ffbbd0, #ff99a9, #ff7878); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: rgba(255, 0, 90, 1);
+      }
+      a {
+        color: rgba(255, 0, 90, 1);
+      }
+      .item {
+        background-color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
       }
       .avatar-image {
         width: 128px;
@@ -19,6 +35,23 @@
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
+      }
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
       }
     </style>
   </head>
