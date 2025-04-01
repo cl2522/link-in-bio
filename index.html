@@ -11,7 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <style>
-      * {border: 1px red dashed;}
+      /*
+      * {
+        border: 1px red dashed;
+      }
+        */
       html {
         min-height: 100%;
       }
@@ -20,18 +24,19 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background: conic-gradient(from 90deg at 50% 50%, #ff97d5, #ffb1df, #ffc9e9, #ffe1f2, #ffdded, #ffbbd0, #ff99a9, #ff7878); /* made at https://learnui.design/tools/gradient-generator.html */
-        color: rgba(255, 0, 90, 1);
+        color: rgba(192, 0, 68, 1);
         font-family: "Work Sans";
       }
       a {
-        color: rgba(255, 0, 90, 1);
+        color: rgba(192, 0, 68, 1);
         text-decoration: none;
       }
       .item {
         background-color: rgba(255, 255, 255, 0.75);
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 10px 10px 19px 0px rgba(173,0,0,1);
       }
       .avatar-image {
         width: 128px;
@@ -48,6 +53,11 @@
       .main-container {
         max-width: 640px;
         margin: auto;
+      }
+      .item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
       }
       .image-row {
         margin-bottom: 20px;
