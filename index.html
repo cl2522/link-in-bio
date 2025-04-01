@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <style>
@@ -14,9 +21,11 @@
         padding-bottom: 40px;
         background: conic-gradient(from 90deg at 50% 50%, #ff97d5, #ffb1df, #ffc9e9, #ffe1f2, #ffdded, #ffbbd0, #ff99a9, #ff7878); /* made at https://learnui.design/tools/gradient-generator.html */
         color: rgba(255, 0, 90, 1);
+        font-family: "Work Sans";
       }
       a {
         color: rgba(255, 0, 90, 1);
+        text-decoration: none;
       }
       .item {
         background-color: rgba(255, 255, 255, 0.75);
@@ -47,11 +56,18 @@
       .name-row {
         margin-bottom: 30px;
         text-align: center;
+        font-family: "Merriweather";
+        font-size: 24px;
+        font-weight: 900;
       }
       .social-icons-row {
         margin-bottom: 30px;
         display: flex;
         justify-content: space-around;
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
   </head>
@@ -67,30 +83,30 @@
      
       <div class="social-icons-row">
         <a href="https://github.com/" target="_blank">
-          GitHub
+          <i class="fa-brands fa-square-github"></i>
         </a>
         <a href="https://www.linkedin.com/" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://www.instagram.com/" target="_blank">
-          Instagram
+          <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://www.tiktok.com/" target="_blank">
-          TikTok
+          <i class="fa-brands fa-tiktok"></i>
         </a>
       </div>
       
       <div class="links-row">
         <div class="item">
           <img class="thumbnail" src="/cattv.jpg">
-          <a target="_blank" href="https://www.youtube.com/watch?v=MrSYP-cotdg&pp=ygUNdmlkZW8gZm9yIGNhdA%3D%3D">
+          <a class="link-text" target="_blank" href="https://www.youtube.com/watch?v=MrSYP-cotdg&pp=ygUNdmlkZW8gZm9yIGNhdA%3D%3D">
             TV for cats
           </a>
         </div>
         
         <div class="item">
           <img class="thumbnail" src="/catbreed.jpg">
-          <a target="_blank" href="https://cats.com/cat-breeds">
+          <a class="link-text" target="_blank" href="https://cats.com/cat-breeds">
             List of Cat Breeds
           </a>
         
